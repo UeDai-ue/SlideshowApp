@@ -61,7 +61,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-        
+        if buttonTapCount == 1 {
+            if self.timer == nil {
+                startTimer()
+            }
+        }
     }
     
     @IBAction func showPastIV(_ sender: Any) {
